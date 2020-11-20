@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digi Dinos</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<header >
+		<div class="row header">
+		<div class="col-2 CompanyName "> 
+			<img src="img/logo.png">
+        </div>
+        <div class="col-9 inputSearch" style="padding-right: 0px; padding-left: 0px;">
+        	<input class="form-control form-control-dark h-100 w-100" type="text" name="" placeholder="Search" aria-label="Search">
+    	</div>
+    	<div class="col-1 login">
+    		<p class=" mt-4 ml-3" >Sign out</p>
+    	</div>		
+	</div>			
+	</header>
+	<section>
+		<div class="row">
+			<div class="col-2 d-none d-md-block bg-light sidebar">
+				<ul class="nav flex-column mt-3">
+					<li class="nav-item">						
+					    <a class="nav-link active" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+						<path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+						</svg>  Dashboard</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link disabled" href="#"> 
+					    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+						<path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+						</svg>  Search</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link disabled" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bar-chart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5h-2v12h2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+						</svg> Statistics
+						</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link disabled" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-people" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+						</svg> Customer</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link disabled" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-blockquote-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm5 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+						<path d="M3.734 6.352a6.586 6.586 0 0 0-.445.275 1.94 1.94 0 0 0-.346.299 1.38 1.38 0 0 0-.252.369c-.058.129-.1.295-.123.498h.282c.242 0 .431.06.568.182.14.117.21.29.21.521a.697.697 0 0 1-.187.463c-.12.14-.289.21-.503.21-.336 0-.577-.108-.721-.327C2.072 8.619 2 8.328 2 7.969c0-.254.055-.485.164-.692.11-.21.242-.398.398-.562.16-.168.33-.31.51-.428.18-.117.33-.213.451-.287l.211.352zm2.168 0a6.588 6.588 0 0 0-.445.275 1.94 1.94 0 0 0-.346.299c-.113.12-.199.246-.257.375a1.75 1.75 0 0 0-.118.492h.282c.242 0 .431.06.568.182.14.117.21.29.21.521a.697.697 0 0 1-.187.463c-.12.14-.289.21-.504.21-.335 0-.576-.108-.72-.327-.145-.223-.217-.514-.217-.873 0-.254.055-.485.164-.692.11-.21.242-.398.398-.562.16-.168.33-.31.51-.428.18-.117.33-.213.451-.287l.211.352z"/>
+						</svg> Intergrations</a>
+					</li>
+					<p style="color: #6c757d; font-weight: 500" class="ml-3 mt-3"> SAVED REPORTS  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="float: right;">
+					<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+					<path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+					</svg></p>
+					<li class="nav-item">
+					    <a class="nav-link disabled" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-newspaper" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+						<path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+						</svg> Current month</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link disabled" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-newspaper" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+						<path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+						</svg> Last quarter</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link disabled" href="#"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-newspaper" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+						<path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+						</svg> Year-end sale</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-10 ">
+				<div id="searchName-row">
+					<div class=" card mt-5">
+						<div class=" card-header card text-center">
+							<span>SEARCH</span>
+						 </div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-7 col-lg-8 col-xl-8">
+								<form id="form-search">
+									<div class="form-group row">
+										<label for="inputID" class="col-sm-3 col-form-label">ID</label>
+										<div class="col-sm-9 col-md-9 col-lg-9">
+											<input type="text" class="form-control" id="searchID">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="inputName" class="col-sm-3 col-form-label">Name</label>
+										<div class="col-sm-9 col-md-9 col-lg-9">
+											<input type="text" class="form-control"  id="searchName">
+										</div>
+									</div>
+								</form>	
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class=" card mt-5">
+					<div class=" card-header card text-center">
+							<span>DETAIL CUSTOMER</span>
+				    </div>
+					<div class="">
+						<div class="col-12 col-md-12 col-lg-12 col-xl-12">
+							<form class="form-row">
+								<div class="form-group col-12  col-md-3 col-lg-3 col-xl-3">
+								    <label for="inputEmail4">Name</label>
+								    <input type="email" class="form-control" id="detailName" placeholder="Name">
+								</div>	
+								<div class="form-group col-12  col-md-3 col-lg-3 col-xl-3">
+								    <label for="inputEmail4">Position</label>
+								    <input type="email" class="form-control" id="detailPosition" placeholder="Position">
+								</div>	
+								<div class="form-group col-12  col-md-3 col-lg-3 col-xl-3">
+								    <label for="inputEmail4">Slary</label>
+								    <input type="email" class="form-control" id="detailSalary" placeholder="Slary">
+								</div>	
+								<div class="form-group col-12  col-md-3 col-lg-3 col-xl-3">
+								    <label for="inputEmail4">Date</label>
+								    <input type="email" class="form-control" id="detailDate" placeholder="Date">
+								</div>	
+								<div class="form-group col-12  col-md-3 col-lg-3 col-xl-3">
+								    <label for="inputEmail4">Office</label>
+								    <input type="email" class="form-control" id="detailOffice" placeholder="Office">
+								</div>
+								<div class="form-group col-12  col-md-3 col-lg-3 col-xl-3">
+								    <label for="inputEmail4">Exn</label>
+								    <input type="email" class="form-control" id="detailExn" placeholder="Exn">
+								</div>	
+							</form>
+						</div>
+					</div>	
+				</div>	
+				<div id="myDIV" >
+				<div class=" border">
+					<div class="row">
+						<div class="col-12 col-md-12 col-lg-12 col-xl-12">
+							<table class="table table-hover" id="blog_table" style="margin-top: 25px">
+							<thead>
+							    <tr id="test">
+							      <th scope="col">id</th>
+							      <th scope="col">name</th>
+							      <th scope="col">position</th>
+							      <th scope="col">salary</th>
+							      <th scope="col">start_date</th>
+							      <th scope="col">office</th>
+							      <th scope="col">extn</th>
+							      <th scope="col">delete</th>
+							    </tr>
+							</thead>
+							<tbody>
+								
+							</tbody>
+						</table>
+						</div>
+					</div>
+				</div>	
+			</div>		
+		</div>
+	</section>	
+	
+	<footer>
+		<div class="row">
+			<div class="col-2">	
+			</div>
+			<div class="col-10">
+				<div class="row">
+					<div class="col-md-1 col-1 button-footer">
+						<button type="button" class="btn btn-outline-secondary">F1</button>
+					</div>
+					<div class="col-md-1 col-1 button-footer">
+						<button type="button" class="btn btn-outline-secondary">F2</button>
+					</div>
+					<div class="col-md-1 col-1 button-footer ">
+						<button id="search-button" type="button" class="btn btn-outline-secondary">F3<span style="font-size: 13px">Search</span></button>
+					</div>
+					<div class="col-md-1 col-1 button-footer" >
+						<button type="button" class="btn btn-outline-secondary">F4</button>
+					</div>
+					<div class="col-md-1 col-1 button-footer">
+						<button id="F5" type="button" class="btn btn-outline-secondary">F5 <span style="font-size: 13px">Clear</span></button>
+					</div>
+					<div class="col-md-1 col-1 button-footer">
+						<button type="button" class="btn btn-outline-secondary">F6</button>
+					</div>
+					<div class="col-md-1 col-1 button-footer">
+						<button type="button" class="btn btn-outline-secondary">F7</button>
+					</div>
+					<div class="col-md-1 col-1 button-footer">
+						<button type="button" class="btn btn-outline-secondary">F8</button>
+					</div>
+					<div class="col-md-1 col-1 button-footer">
+						<button type="button" class="btn btn-outline-secondary">F9</button>
+					</div>
+					<div class="col-md-1 col-1 button-footer">
+						<button id="F10" type="button" class="btn btn-outline-secondary">F10<span style="font-size: 13px">Save</span></button>
+					</div>
+					<div class="col-md-1 col-1 button-footer">
+						<button type="button" class="btn btn-outline-secondary">F11</button>
+					</div>
+					<div class="col-md-1 col-1 button-footer">
+						<button type="button" class="btn btn-outline-secondary">F12</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
